@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title>Transform property</title>
+		<style>
+		.box1{
+			border: 2px solid red;
+			width:100px;
+			height:100px;
+			margin:40px;
+			transition-duration:1s;
+		}
+		.box1:hover{
+			transform:scaleX(0.5);
+			transition-duration:4s;
+			transition-delay:2s;
+			
+		}
+		.box2,.box3{
+			border: 2px solid green;
+			width:100px;
+			height:100px;
+			margin:40px;
+		}
+		.box2:hover{
+            /* transform:scaleY(0.1); */
+			transform:translateY(500px);
+			transition-duration:4s;
+			transition-delay:1s;
+			
+		}
+		.box3:hover{
+			transform:rotate(90deg);
+			transition-duration:4s; 
+			transition-delay:1s;
+			
+		}
+		</style>
+	</head>
+	<body>
+	
+	<div class="box1"></div>
+	<div class="box2"></div>
+	<div class="box3"></div>
+	</body>
+</html>

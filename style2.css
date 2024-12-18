@@ -1,0 +1,93 @@
+
+
+    /* Center the caption in the middle of the image */
+    .carousel-caption {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+    }
+
+    /* Adjust caption text for better visibility */
+    .carousel-caption h3,
+    .carousel-caption p {
+        color: white;
+        /*background-color: rgba(0, 0, 0, 0.5);  Add semi-transparent background */
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    /* Default - Additional image hidden */
+    .additional-img {
+        display: none;
+    }
+
+    #cards {
+        display: none;
+    }
+
+    .img-fluid {
+        margin-top: 30px;
+    }
+
+    .content h2 {
+        margin-top: 30px;
+    }
+
+    /* Show additional image only within specific dimensions */
+    @media screen and (min-width: 600px) and (max-width: 900px) {
+        .additional-img {
+            display: block;
+            /* Ensure the image is displayed */
+            margin-top: 15px;
+            width: 100%;
+            /* Ensure it fits within the column */
+        }
+
+
+      
+}
+
+
+/* Reset Bootstrap's column behavior */
+.card-container {
+    width: 100%; /* Default to one card per row */
+    padding: 15px;
+}
+
+/* Two cards per row for 768px to 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+    .card-container {
+        width: 50% !important; /* Override Bootstrap grid */
+        float: left;
+    }
+}
+
+/* Four cards per row for screens above 991px */
+@media (min-width: 992px) {
+    .card-container {
+        width: 25% !important; /* Override Bootstrap grid */
+        float: left;
+    }
+}
+
+/* Ensure the row container uses clearfix to manage floats */
+.custom-row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/* @media (min-width: 768px) and (max-width: 991px) {
+    #card .col-6 {
+        display: flex;
+        justify-content: center;
+    }
+} */
+
+   
+
+    
+    
